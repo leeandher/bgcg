@@ -12,12 +12,12 @@ const PreviewWrapper = styled.div`
   margin-top: 2rem;
   min-height: 300px;
   img {
-    max-width: 400px;
+    max-width: 350px;
     max-height: 400px;
   }
   .sandwich-assembly {
-    display: ${({ isGrilled }) => (isGrilled ? "none" : "inline-block")};
     position: relative;
+    display: ${({ isGrilled }) => (isGrilled ? "none" : "inline-block")};
   }
   .onTop {
     position: absolute;
@@ -47,15 +47,19 @@ const Preview = ({
       <div className="sandwich-assembly">
         <img
           src={isButtered ? ButteredBreadImage : BreadWhiteImage}
-          alt={isButtered ? "Buttered bread" : "Heathenistic plain bread"}
-          title={isButtered ? "Buttered bread" : "Heathenistic plain bread"}
+          alt={
+            isButtered ? "Smooth buttery goodness" : "Uncultured plain bread"
+          }
+          title={
+            isButtered ? "Smooth buttery goodness" : "Uncultured plain bread"
+          }
         />
         {isCheese && (
           <img
             className="cheese onTop"
             src={CheeseCheddarImage}
-            alt="Cheddar Cheese"
-            title="Cheddar Cheese"
+            alt="The good stuff"
+            title="The good stuff"
           />
         )}
         {isAssembled && (
@@ -70,8 +74,12 @@ const Preview = ({
       {!isAssembled && (
         <img
           src={isButtered ? ButteredBreadImage : BreadWhiteImage}
-          alt={isButtered ? "Buttered bread" : "Heathenistic plain bread"}
-          title={isButtered ? "Buttered bread" : "Heathenistic plain bread"}
+          alt={
+            isButtered ? "Smooth buttery goodness" : "Uncultured plain bread"
+          }
+          title={
+            isButtered ? "Smooth buttery goodness" : "Uncultured plain bread"
+          }
         />
       )}
       <img

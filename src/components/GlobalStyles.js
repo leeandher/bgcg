@@ -4,9 +4,7 @@ const GlobalStyles = createGlobalStyle`
   * {
     font-family: 'Jua', 'Helvetica', 'Trebuchet MS', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
     box-sizing: border-box;
-  }
-  code {
-    font-family: 'Fira Code', 'Ioveska', Menlo, Monaco, Consolas, "Courier New", monospace;
+    user-select: none;
   }
   body {
     margin: 0;
@@ -26,10 +24,11 @@ const GlobalStyles = createGlobalStyle`
 
   @media (prefers-color-scheme: light) {
     body {
-        background-color: #000;
-        color: white;
+      background-color: #efefef;
+      color: #292929;
+      text-shadow: -3px 0  #fcdc25;
     }
-}
+  }
 `;
 
 export default GlobalStyles;

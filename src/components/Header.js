@@ -17,7 +17,7 @@ const HeaderWrapper = styled.header`
 const Header = () => {
   return (
     <HeaderWrapper>
-      <h1>B.G.C.G</h1>
+      <h1>B.G.C.G.</h1>
       <h2>(Best Grilled Cheese Generator)</h2>
     </HeaderWrapper>
   );

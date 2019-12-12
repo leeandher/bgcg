@@ -7,9 +7,8 @@ import AssemblyFloor from "./components/AssemblyFloor";
 import Footer from "./components/Footer";
 
 const AppWrapper = styled.div`
-  margin: 0 auto;
+  margin: 3em auto;
   max-width: 960px;
-  border: 2px solid red;
 `;
 
 const App = () => {

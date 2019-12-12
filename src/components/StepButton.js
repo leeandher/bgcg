@@ -6,11 +6,14 @@ const StepButtonWrapper = styled.button`
   font-size: 1.75em;
   background: #fcdc25;
   color: #292929;
-  transform: skew(-7deg);
-  margin: 1em;
+  transform: skew(-7deg) translateY(-3px);
+  margin: 1.5em;
+  width: 250px;
   cursor: pointer;
-  &:hover {
+  transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+  &:hover&:not(:disabled) {
     opacity: 0.8;
+    transform: skew(7deg) translateY(0px);
   }
   &:disabled {
     opacity: 0.2;
