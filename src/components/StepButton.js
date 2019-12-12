@@ -14,6 +14,7 @@ const StepButtonWrapper = styled.button`
   }
   &:disabled {
     opacity: 0.2;
+    cursor: default;
   }
   p {
     margin: 0;
@@ -23,9 +24,9 @@ const StepButtonWrapper = styled.button`
   }
 `;
 
-const StepButton = ({ children, disabled }) => {
+const StepButton = ({ children, disabled, onClick }) => {
   return (
-    <StepButtonWrapper disabled={disabled}>
+    <StepButtonWrapper disabled={disabled} onClick={onClick}>
       <p>{children}</p>
     </StepButtonWrapper>
   );
